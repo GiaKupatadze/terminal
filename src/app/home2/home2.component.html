@@ -1,0 +1,66 @@
+
+<div class="swiper-mather">
+    <div class="sun">
+        <div class="tittle">
+        <a href="">სულ სწრაფი შეთავაზებები</a>
+    </div>
+
+  <swiper-container class="mySwiper"  slides-per-view="4"
+  centered-slides="true" space-between="10" grab-cursor="true"  navigation="true" free-mode="true">
+  <swiper-slide *ngFor="let zumer of zoomers.products"><div class="card" style="width: 18rem;">
+    <img src="{{zumer.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <div class="price-container">
+            <span *ngIf="zumer.salePrice">{{zumer.salePrice}}</span>
+            <p  [ngClass]="{sale: zumer.salePrice}">{{zumer.price}}</p>
+        </div>
+      <h5 class="card-title">{{zumer.title}}</h5>
+      <p class="card-text">{{zumer.description}}</p>
+      <div class="man">
+        <div class="man1"><a href="#"><img src="https://zoommer.ge/icons/compare-card.svg" class="man3" alt=""></a></div>
+       <a href="#" class="man2"><img src="https://zoommer.ge/icons/header-cart.svg"alt=""><h6>დამატება</h6> 
+       </a>
+    </div>
+    </div>
+  </div></swiper-slide>
+</swiper-container>
+</div>
+</div>
+
+
+
+<div class="swiper-mather">
+    <div class="sun">
+        <div class="tittle">
+        <a href="">სულ სწრაფი შეთავაზებები</a>
+    </div>
+
+  <swiper-container class="mySwiper"  slides-per-view="4"
+  centered-slides="true" space-between="10" grab-cursor="true"  navigation="true" free-mode="true">
+  <swiper-slide *ngFor="let zumer of zoomers1.products"><div class="card" style="width: 18rem;">
+    <img src="{{zumer.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <div class="price-container">
+            <span *ngIf="zumer.salePrice">{{zumer.salePrice}}</span>
+            <p  [ngClass]="{sale: zumer.salePrice}">{{zumer.price}}</p>
+        </div>
+      <h5 class="card-title">{{zumer.title}}</h5>
+      <p class="card-text">{{zumer.description}}</p>
+      <div class="man">
+        <div class="man1"><a href="#"><img src="https://zoommer.ge/icons/compare-card.svg" class="man3" alt=""></a></div>
+       <a href="#" class="man2"><img src="https://zoommer.ge/icons/header-cart.svg"alt=""><h6>დამატება</h6> 
+       </a>
+    </div>
+    </div>
+  </div></swiper-slide>
+</swiper-container>
+</div>
+</div>
+
+<iframe
+  id="inlineFrameExample"
+  title="Inline Frame Example"
+  width="300"
+  height="200"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+</iframe>
